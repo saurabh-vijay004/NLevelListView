@@ -1,0 +1,172 @@
+[
+    {
+      "Id": null,
+      "Name": "Shop Women",
+      "Childrens": [
+        {
+          "Id": 251,
+          "Name": "New arrivals"
+        },
+        {
+          "Id": null,
+          "Name": "Ethnic",
+          "Childrens": [
+            {
+              "Id": 182,
+              "Name": "View All"
+            },
+            {
+              "Id": 184,
+              "Name": "Tops/Tunics"
+            },
+            {
+              "Id": 185,
+              "Name": "Dresses"
+            },
+            {
+              "Id": 183,
+              "Name": "Kurtas"
+            },
+            {
+              "Id": 188,
+              "Name": "Salwar/Churidar"
+            },
+            {
+              "Id": 189,
+              "Name": "Skirts"
+            },
+            {
+              "Id": 191,
+              "Name": "Pants"
+            }
+          ]
+        },
+        {
+          "Id": null,
+          "Name": "Western",
+          "Childrens": [
+            {
+              "Id": 193,
+              "Name": "View All"
+            },
+            {
+              "Id": 194,
+              "Name": "Tops"
+            },
+            {
+              "Id": 195,
+              "Name": "Dresses"
+            },
+            {
+              "Id": 197,
+              "Name": "Pants"
+            },
+            {
+              "Id": 198,
+              "Name": "Jeans"
+            },
+            {
+              "Id": 305,
+              "Name": "Skirts"
+            },
+            {
+              "Id": 200,
+              "Name": "Jumpsuits"
+            },
+            {
+              "Id": 201,
+              "Name": "Shorts"
+            },
+            {
+              "Id": 202,
+              "Name": "Shrugs"
+            },
+            {
+              "Id": 212,
+              "Name": "Jackets"
+            },
+            {
+              "Id": 246,
+              "Name": "Winter Essentials"
+            }
+          ]
+        },
+        {
+          "Id": null,
+          "Name": "Accessories",
+          "Childrens": [
+            {
+              "Id": 227,
+              "Name": "View All"
+            },
+            {
+              "Id": 228,
+              "Name": "Bags"
+            },
+            {
+              "Id": 295,
+              "Name": "Jewellery"
+            },
+            {
+              "Id": 300,
+              "Name": "Hair accessories"
+            },
+            {
+              "Id": 229,
+              "Name": "Belts"
+            }
+          ]
+        },
+        {
+          "Id": 210,
+          "Name": "Sale"
+        }
+      ]
+    },
+    {
+      "Id": null,
+      "Name": "Shop Men",
+      "Childrens": [
+        {
+          "Id": 142,
+          "Name": "New Arrivals"
+        },
+        {
+          "Id": 278,
+          "Name": "T-Shirts"
+        },
+        {
+          "Id": 280,
+          "Name": "Shirts"
+        },
+        {
+          "Id": 284,
+          "Name": "Jeans"
+        },
+        {
+          "Id": 285,
+          "Name": "Jackets"
+        },
+        {
+          "Id": 282,
+          "Name": "Pants"
+        },
+        {
+          "Id": 281,
+          "Name": "Shorts"
+        },
+        {
+          "Id": 155,
+          "Name": "Sale"
+        },
+        {
+          "Id": 304,
+          "Name": "Winter Essentials"
+        }
+      ]
+    },
+    {
+      "Id": 210,
+      "Name": "Sale"
+    }
+  ]
