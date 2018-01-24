@@ -199,7 +199,7 @@ public class MainActivity extends Activity {
 
 											@Override
 											public View getView(NLevelItem item) {
-												View view = inflater.inflate(R.layout.list_item, null);
+												View view = inflater.inflate(R.layout.second_level_item, null);
 												TextView tv = (TextView) view.findViewById(R.id.textView);
 												//tv.setBackgroundColor(Color.YELLOW);
 												String name = (String) ((SomeObject) item.getWrappedObject()).getName();
@@ -209,23 +209,34 @@ public class MainActivity extends Activity {
 										});
 										list.add(parent);
 										if (childObject.has("Childrens") && childObject.get("Childrens") != null) {
-											JSONArray innerChildrenArray = jo.getJSONArray("Childrens");
+											JSONArray innerChildrenArray = childObject.getJSONArray("Childrens");
+											System.out.println("innerChildrenArray Length:: "+ innerChildrenArray.length() + "innerChildrenArray::" + innerChildrenArray);
+
 											if (innerChildrenArray.length() > 0) {
 												for (int k = 0; k < innerChildrenArray.length(); k++) {
-													NLevelItem child = new NLevelItem(new SomeObject("child " + k), parent, new NLevelView() {
+													JSONObject innerChildObject = innerChildrenArray.getJSONObject(k);
+													System.out.println("innerChildObject::  " + innerChildObject);
 
-														@Override
-														public View getView(NLevelItem item) {
-															View view = inflater.inflate(R.layout.list_item, null);
-															TextView tv = (TextView) view.findViewById(R.id.textView);
-														//	tv.setBackgroundColor(Color.GRAY);
-															String name = (String) ((SomeObject) item.getWrappedObject()).getName();
-															tv.setText(name);
-															return view;
-														}
-													});
 
-													list.add(child);
+													if (innerChildObject.has("Name") && innerChildObject.get("Name") != null) {
+
+														String innerChildName = (String) innerChildObject.get("Name");
+														System.out.println("innerChildName::" + innerChildName);
+														NLevelItem child = new NLevelItem(new SomeObject(innerChildName), parent, new NLevelView() {
+
+															@Override
+															public View getView(NLevelItem item) {
+																View view = inflater.inflate(R.layout.third_level_item, null);
+																TextView tv = (TextView) view.findViewById(R.id.textView);
+																//	tv.setBackgroundColor(Color.GRAY);
+																String name = (String) ((SomeObject) item.getWrappedObject()).getName();
+																tv.setText(name);
+																return view;
+															}
+														});
+
+														list.add(child);
+													}
 												}
 											}
 										}
